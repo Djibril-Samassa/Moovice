@@ -15,23 +15,16 @@ class Popular extends React.Component{
         .then((res) => res.json())
         .then((res) =>{
             res.results.map((film) =>{
-                this.state.movies.push(film.title)
+                this.state.movies.push(film)
             })
         })
     };
-
 
 
     render(){
         return (
             <div>
                 <h1>Popular</h1>
-                <Card
-                    poster= "./poster.png"
-                    title = "Titre du film"
-                    year = "2002"
-                    desc = "Description du film"
-                />  
             </div>
         
         )
