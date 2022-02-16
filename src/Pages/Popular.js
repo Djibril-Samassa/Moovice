@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../Components/Card"
 
 class Popular extends React.Component{
 
@@ -23,7 +24,16 @@ class Popular extends React.Component{
 
     render(){
         return (
-        <h1>Popular</h1>
+            <div>
+                <h1>Popular</h1>
+                <Card
+                    poster= "./poster.png"
+                    title = "Titre du film"
+                    year = "2002"
+                    desc = "Description du film"
+                />  
+            </div>
+        
         )
     };
 
