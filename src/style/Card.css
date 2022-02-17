@@ -2,7 +2,6 @@
 .photo {
     height: 150px;
     width: 150px; 
-    margin: 0px auto;
 }
 
 .title{
@@ -12,15 +11,17 @@
 .desc{
 }
 
-div>div{
+div>div>ul{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
-div>div>div{
+
+.card{
+    margin: 2em;
+    width:350px;
     display: flex;
     flex-direction: column;
-    margin:5em;
-    width:300px;
+    align-items: center;
 }
-
