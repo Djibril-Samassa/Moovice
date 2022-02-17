@@ -23,7 +23,7 @@ class PopularBattle extends React.Component{
     componentDidUpdate(){
         if(this.state.currentBattle >= 18){
             console.log(this.state.currentBattle);
-            alert("Vous avez parcouru tous les Film")
+            alert("Vous avez parcouru tous les Films")
         }
     }
 
